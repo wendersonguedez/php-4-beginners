@@ -30,36 +30,10 @@ $books = [
 ];
 
 /**
- * Filters an array of items using a given callback function.
- *
- * This function iterates through each item in the input array
- * and applies the provided callback function to determine if
- * the item should be included in the filtered result.
- *
- * @param array $items Items to filter.
- * @param callable $fn Callback function that receives each item as a parameter.
- *                     It should return true to keep the item, or false to exclude it.
- *
- * @return array Filtered items that satisfy the condition set by the callback.
- */
-function filter($items, $fn)
-{
-    $filteredItems = [];
-
-    foreach ($items as $item) {
-        if ($fn($item)) {
-            $filteredItems[] = $item;
-        }
-    }
-
-    return $filteredItems;
-}
-
-/**
  * Filtering by release year biggest or equal 2000.
  */
-$filteredBooks = filter($books, function ($book) {
-    return $book['releaseYear'] < 2000;
+$filteredBooks = array_filter($books, function ($book) {
+    return $book['author'] === 'Andy Weir';
 });
 
 ?>
