@@ -20,12 +20,18 @@
                         <div class="hidden md:block">
                             <div class="ml-10 flex items-baseline space-x-4">
                                 <!-- Current: "bg-gray-900 text-white", Default: "text-gray-300 hover:bg-gray-700 hover:text-white" -->
-                                <a href="index.view.php" class="rounded-md bg-gray-900 px-3 py-2 text-sm font-medium text-white"
-                                    aria-current="page">Home</a>
+                                <a href="index.view.php" class="rounded-md px-3 py-2 text-sm font-medium text-white hover:bg-gray-700"
+                                    aria-current="page">
+                                    Home
+                                </a>
                                 <a href="about.view.php"
-                                    class="rounded-md px-3 py-2 text-sm font-medium text-gray-300 hover:bg-gray-700 hover:text-white">About Us</a>
+                                    class="rounded-md px-3 py-2 text-sm font-medium text-gray-300 hover:bg-gray-700 hover:text-white">
+                                    About Us
+                                </a>
                                 <a href="contact.view.php"
-                                    class="rounded-md px-3 py-2 text-sm font-medium text-gray-300 hover:bg-gray-700 hover:text-white">Contact</a>
+                                    class="rounded-md px-3 py-2 text-sm font-medium bg-gray-900 text-gray-300 hover:bg-gray-700 hover:text-white">
+                                    Contact
+                                </a>
                             </div>
                         </div>
                     </div>
@@ -156,12 +162,12 @@
 
         <header class="bg-white shadow">
             <div class="mx-auto max-w-7xl px-4 py-6 sm:px-6 lg:px-8">
-                <h1 class="text-3xl font-bold tracking-tight text-gray-900">Home</h1>
+                <h1 class="text-3xl font-bold tracking-tight text-gray-900">Contact</h1>
             </div>
         </header>
         <main>
             <div class="mx-auto max-w-7xl px-4 py-6 sm:px-6 lg:px-8">
-                <p>Home page.</p>
+                <p>Contact us now.</p>
             </div>
         </main>
     </div>
