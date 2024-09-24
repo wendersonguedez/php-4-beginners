@@ -9,16 +9,16 @@
                 <div class="hidden md:block">
                     <div class="ml-10 flex items-baseline space-x-4">
                         <!-- Current: "bg-gray-900 text-white", Default: "text-gray-300 hover:bg-gray-700 hover:text-white" -->
-                        <a href="/php-4-beginners/index.php" class="rounded-md px-3 py-2 text-sm font-medium text-white <?= $current_page == 'index.php' ? 'bg-gray-900 text-white' : '' ?>"
+                        <a href="/php-4-beginners/index.php" class="rounded-md px-3 py-2 hover:bg-gray-700 hover:text-white text-sm font-medium text-white <?= str_contains($current_page, 'index.php') ? 'bg-gray-900 text-white' : '' ?>"
                             aria-current="page">
                             Home
                         </a>
                         <a href="/php-4-beginners/about.php"
-                            class="rounded-md px-3 py-2 text-sm font-medium text-gray-300 hover:bg-gray-700 hover:text-white <?= $current_page == 'about.php' ? 'bg-gray-900 text-white' : '' ?>">
+                            class="rounded-md px-3 py-2 text-sm font-medium text-gray-300 hover:bg-gray-700 hover:text-white <?= str_contains($current_page, 'about.php') ? 'bg-gray-900 text-white' : '' ?>">
                             About Us
                         </a>
                         <a href="/php-4-beginners/contact.php"
-                            class="rounded-md px-3 py-2 text-sm font-medium text-gray-300 hover:bg-gray-700 hover:text-white <?= $current_page == 'contact.php' ? 'bg-gray-900 text-white' : '' ?>">
+                            class="rounded-md px-3 py-2 text-sm font-medium text-gray-300 hover:bg-gray-700 hover:text-white <?= str_contains($current_page, 'contact.php') ? 'bg-gray-900 text-white' : '' ?>">
                             Contact
                         </a>
                     </div>
