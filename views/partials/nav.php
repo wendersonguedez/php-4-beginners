@@ -17,6 +17,10 @@
                             class="rounded-md px-3 py-2 text-sm font-medium text-gray-300 hover:bg-gray-700 hover:text-white <?= urlIs('about.php') ? 'bg-gray-900 text-white' : '' ?>">
                             About Us
                         </a>
+                        <a href="/notes"
+                            class="rounded-md px-3 py-2 text-sm font-medium text-gray-300 hover:bg-gray-700 hover:text-white <?= urlIs('notes.php') ? 'bg-gray-900 text-white' : '' ?>">
+                            Notes
+                        </a>
                         <a href="/contact"
                             class="rounded-md px-3 py-2 text-sm font-medium text-gray-300 hover:bg-gray-700 hover:text-white <?= urlIs('contact.php') ? 'bg-gray-900 text-white' : '' ?>">
                             Contact
